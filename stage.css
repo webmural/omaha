@@ -1,0 +1,52 @@
+html {
+  font-family: sans-serif;
+  font-size: max(1em, 3vmax + 5vmin);
+}
+
+body {
+  margin: 0;
+}
+
+.unity {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.unified {
+  align-self: center;
+  position: relative;
+  padding: 1em;
+  flex-basis: 100%;
+  min-height: 61vh;
+}
+
+.unified :only-child {
+  margin: auto;
+  position: absolute;
+  bottom: 22%;
+}
+
+.voz {
+  font-size: 0;
+}
+
+@media (color) {
+  ::selection {
+    background: indigo;
+    color: #bae;
+    text-shadow: none;
+  }
+
+  .shadow {
+    text-shadow:
+      0 -1ch 0 #415,
+      0 -2ch 0 rebeccapurple,
+      0 -3ch 0 blueviolet,
+      0 -5ch 0 darkviolet,
+      0 -8ch 0 #bae;
+  }
+}
